@@ -15,8 +15,10 @@ body {
     width: unset;
 }
 
-p img {
+article.preview img {
     width: 70vw;
+    float: right;
+    margin-left: 1em;
 }
 
 /***** original *****/
@@ -39,6 +41,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
+article.preview {
+    line-height: 2em;
+}
+
 body {
     line-height: 1;
 }
@@ -251,7 +258,7 @@ nav a:hover {
     color: #FFF;
 }
 nav li.selected a {
-    background-color: #15A9DB;
+    background-color: var(--bluepants2);
     color: #FFF;
 }
 

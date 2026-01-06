@@ -2,19 +2,27 @@
             <h4 class="date">{{ article.date.strftime("%b %d, %Y") }}</h4>
             {% endif %}
 
+            {% if articles_page %}
+            <article class="post preview">
+            <img src="{{ article.image }}"></img>
+            {% else %}
             <article class="post">
+            {% endif %}
                 {% if article.title %}
                 <h2 class="title">
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permanent Link to &quot;{{ article.title|striptags }}&quot;">{{ article.title }}</a>
                 </h2>
                 {% endif %}
 
-		{% if not articles_page %}
-		{% include "translations.html" %}
-		{% endif %}                
-                
+            {% if not articles_page %}
+            {% include "translations.html" %}
+            {% endif %}
 
+            {% if articles_page %}
+                {{ article.summary }}
+            {% else %}
                 {{ article.content }}
+            {% endif %}
                 <div class="clear"></div>
 
                 <div class="info">
