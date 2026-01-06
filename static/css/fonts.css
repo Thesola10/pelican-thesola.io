@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Fira Code Nerd Font Complete";
+    src: url(/theme/fonts/fcnf.woff) format('woff'),
+         url(/theme/fonts/fcnf.ttf)  format('truetype');
+}
+
+@font-face {
+    font-family: "Nerd Font";
+    src: url(/theme/fonts/hnf.woff)  format('woff'),
+         url(/theme/fonts/hnf.ttf)   format('truetype');
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url(/theme/fonts/fira.woff) format('woff'),
+         url(/theme/fonts/fira.ttf)  format('truetype');
+}
+@font-face {
+    font-family: "Fira Sans";
+    src: url(/theme/fonts/firai.woff) format('woff'),
+         url(/theme/fonts/firai.ttf)  format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(/theme/fonts/mw.woff) format('woff'),
+         url(/theme/fonts/mw.ttf)  format('truetype');
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/theme/fonts/mwl.woff) format('woff'),
+         url(/theme/fonts/mwl.ttf)  format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/theme/fonts/mwi.woff) format('woff'),
+         url(/theme/fonts/mwi.ttf)  format('truetype');
+    font-style: italic;
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(/theme/fonts/mwli.woff) format('woff'),
+         url(/theme/fonts/mwli.ttf)  format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+:root {
+    --font-display: "Merriweather", serif;
+    --font-sans: "Fira Sans", sans-serif;
+    --font-mono: "Fira Code Nerd Font Complete", "Fira Code", "Fira Mono", monospace;
+    --font-icons: "Nerd Font", "Fira Code Nerd Font Complete";
+}

@@ -1,0 +1,122 @@
+@import url(/theme/css/fonts.css);
+
+/********** Colors and variants **********/
+:root {
+    --bluepants: #0F213B;
+    --bluepants2: #18345E;
+    --bluepants3: #214881;
+    --orangeshirt: #D07A12;
+    --ochre: #FADD87;
+    --bordeaux: #780129;
+    --steel: #BFBFBF;
+    --dark: #171717;
+}
+
+#viewport {
+    --backdrop: var(--bluepants);
+    --text: var(--steel);
+    --hi-link: var(--ochre);
+    --hi-hdr: var(--ochre);
+    --hi-h3: var(--ochre);
+    --hi-accent: var(--orangeshirt);
+}
+
+#viewport.adaptive {
+    --backdrop: white;
+    --text: black;
+    --hi-link: var(--bordeaux);
+    --hi-hdr: var(--bluepants2);
+    --hi-h3: var(--bordeaux);
+    --hi-accent: var(--bordeaux);
+}
+@media (prefers-color-scheme: dark) {
+    #viewport.adaptive {
+        --backdrop: var(--dark);
+        --text: var(--steel);
+        --hi-link: var(--ochre);
+        --hi-hdr: var(--ochre);
+        --hi-h3: var(--ochre);
+        --hi-accent: var(--orangeshirt);
+    }
+}
+
+
+/********** Common elements **********/
+
+icons {
+    font-family: var(--font-icons);
+    display: inline;
+    margin-right: 1rem;
+}
+icons[tab] {
+    position: absolute;
+    left: 210px;
+    margin-left: 10%;
+    margin-right: unset;
+}
+
+nav {
+    list-style-type: none;
+    text-align: left;
+    font-family: var(--font-mono);
+}
+nav a {
+    display: list-item;
+}
+
+#viewport {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--backdrop);
+  color: var(--text);
+}
+
+body {
+    font-family: var(--font-sans);
+}
+a {
+    color: var(--hi-link);
+    text-decoration: none;
+}
+
+article img {
+    float: left;
+    max-width: 200px;
+    margin-right: 1ch;
+    margin-bottom: 20px;
+}
+h1 {
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-display);
+}
+h4, h5, h6 {
+    font-family: var(--font-mono);
+    margin-bottom: .3em;
+}
+
+h1, h2 {
+    color: var(--hi-hdr);
+}
+
+h3, h4, h5, h6 {
+    color: var(--hi-h3);
+}
+
+pre, tt {
+    font-size: 94%;
+    font-family: var(--font-mono);
+}
+
+pre {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    white-space: pre-wrap;
+}
+
+small { opacity: 80%; }
+

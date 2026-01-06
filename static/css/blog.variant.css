@@ -1,0 +1,14 @@
+body {
+    background-image: url(/theme/images/night.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#viewport {
+    padding: 1em;
+    width: unset;
+}
+
+p img {
+    width: 70vw;
+}

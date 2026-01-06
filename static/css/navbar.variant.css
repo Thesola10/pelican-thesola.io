@@ -1,0 +1,47 @@
+/*
+ * Variant CSS fragment for the navigation bar at the top of my home pages.
+ * Designed to be embedded in an object tag.
+ */
+
+body {
+    margin: 0;
+    background-color: transparent;
+}
+
+/* NAVBAR LAYOUT */
+#viewport {
+    padding-top: 2em;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 96px auto;
+    column-gap: 3ch;
+}
+
+nav {
+    grid-column: 2;
+    align-self: center;
+}
+nav a {
+    display: inline-block;
+    padding: 1ch;
+    padding-top: 0;
+}
+
+#logo {
+    width: 96px;
+    grid-column: 1;
+}
+#logo img {
+    width: 96px;
+}
+
+
+/********** RESPONSIVE **********/
+/* Navbar starts breaking */
+@media screen and (max-width: 340px) {
+    nav {
+        font-size: 85%;
+    }
+}
+
+
