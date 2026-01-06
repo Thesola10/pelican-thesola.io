@@ -17,3 +17,4 @@
 * [gavinzbq](https://github.com/gavinzbq)
 * [sylvainmetayer](https://github.com/sylvainmetayer)
 * [wbob](https://github.com/wbob)
+* [thesola10](https://github.com/thesola10) (transmogrified into thesola.io style)

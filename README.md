@@ -1,7 +1,5 @@
-![screenshot](screenshot.png)
-
-# Blue Penguin for pelican
-A simple theme for pelican. Solarized pygments. Feeds support.
+# My Pelican theme
+A theme derived from Blue Penguin, liberally adapted into my graphical style.
 
 ## Settings
 ```python
@@ -46,12 +44,6 @@ PAGINATION_PATTERNS = (
 )
 
 ```
-
-## How to contribute
-Contributions are very welcome. Keep in mind that this theme goal is to be
-minimalistic/simple. Contributions will be accepted through Github Pull
-Requests. If you don’t have a Github account you can suggest me your
-changes by email.
 
 ## Contributors
 See [CONTRIBUTORS.md](CONTRIBUTORS.md).
