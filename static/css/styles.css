@@ -23,6 +23,7 @@
 
 #viewport.adaptive {
     --backdrop: white;
+    --backdrop-semi: #fff7;
     --text: black;
     --hi-link: var(--bordeaux);
     --hi-hdr: var(--bluepants2);
@@ -32,6 +33,7 @@
 @media (prefers-color-scheme: dark) {
     #viewport.adaptive {
         --backdrop: var(--dark);
+        --backdrop-semi: #1717177f;
         --text: var(--steel);
         --hi-link: var(--ochre);
         --hi-hdr: var(--ochre);

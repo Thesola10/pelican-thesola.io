@@ -2,6 +2,7 @@ body {
     background-image: url(/theme/images/night.jpg);
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
 * {
@@ -12,7 +13,16 @@ body {
 
 #viewport {
     padding: 1em;
+    max-width: 80em;
     width: unset;
+
+    background: linear-gradient(90deg, var(--backdrop-semi) 0px
+                                     , var(--backdrop-semi) 140px
+                                     , var(--backdrop) 140px);
+
+    backdrop-filter: blur(5px);
+    margin-left: calc(max(1em, 50% - 41em));
+    margin-right: 1em;
 }
 
 article.preview img {
@@ -252,14 +262,15 @@ nav li {
 nav a {
     display: block;
     padding: 4.5em 10px 10px 10px;
+    color: var(--steel);
 }
 nav a:hover {
-    background-color: #d3d3d3;
-    color: #FFF;
+    background-color: var(--bluepants);
+    color: var(--ochre);
 }
 nav li.selected a {
     background-color: var(--bluepants2);
-    color: #FFF;
+    color: white;
 }
 
 header .header_box {
@@ -274,6 +285,12 @@ header h2 {
     font-size: 1em;
     margin: .3em 0;
     color: #DDD;
+}
+
+header h1 img {
+    max-height: 80px;
+    display: inline;
+    margin-top: -70px;
 }
 
 #content {
@@ -333,10 +350,15 @@ code {
 footer {
     line-height: 2.5em;
     text-align: center;
-    color: #BBB;
-    margin: 3em 0;
-    border: 1px solid #EEE;
-    border-radius: 5px;
+    color: var(--text);
+    margin: 3em -1em -1em -1em;
+    padding-bottom: 3em;
+    width: inherit;
+
+    background-color: rgba(0,0,0, 0.1);
+    mask: linear-gradient(90deg, transparent 0px
+                               , transparent 140px
+                               , white 140px);
 }
 footer p { margin: 0; }
 
@@ -372,6 +394,14 @@ footer p { margin: 0; }
     }
     nav ul {
         margin: 0 0 1em 0;
+    }
+
+    #viewport {
+        background: var(--backdrop);
+    }
+
+    footer {
+        mask: unset;
     }
 }
 @media print {
