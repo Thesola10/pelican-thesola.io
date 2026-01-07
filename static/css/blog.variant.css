@@ -26,7 +26,7 @@ body {
 }
 
 article.preview img {
-    width: 70vw;
+    width: 200px;
     float: right;
     margin-left: 1em;
 }
@@ -39,6 +39,7 @@ License: none (public domain)
 /* Mockingbird Theme by Nevan Scott nevanscott.com */
 /* Modified by Jody Frankowski */
 /* Modified by ix5 */
+/* Modified by thesola10 */
 
 em {
     font-style: italic;
@@ -50,6 +51,10 @@ strong {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
+}
+
+article {
+    line-height: 1.5em;
 }
 
 article.preview {
@@ -85,6 +90,15 @@ ul {
     list-style: outside disc;
 }
 
+li.card {
+    display: inline-block;
+    width: 15em;
+    margin: 1em;
+    padding: 1em;
+
+    background-color: #00507f20;
+}
+
 ol {
     list-style: outside decimal;
 }
@@ -101,6 +115,9 @@ dd > p {
     margin-top: 0;
 }
 
+#content > h1, #content > h2, #content > ul {
+    margin-left: 140px;
+}
 
 img, svg, p, .post > .highlight, .highlighttable, h4, h5, h6, dl {
     margin-top: 1.2em;
@@ -156,6 +173,10 @@ thead {
 }
 .info a.tags.selected {
     border: 1px #999 solid;
+}
+
+.month.archives {
+    min-height: 60px;
 }
 
 .post {
@@ -402,6 +423,10 @@ footer p { margin: 0; }
 
     footer {
         mask: unset;
+    }
+
+    #content > h1, #content > h2, #content > ul {
+        margin-left: unset;
     }
 }
 @media print {
