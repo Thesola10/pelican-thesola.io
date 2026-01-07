@@ -54,7 +54,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 article {
-    line-height: 1.5em;
+    line-height: 1.7em;
+    font-size: 1.07em;
 }
 
 article.preview {
@@ -423,6 +424,11 @@ footer p { margin: 0; }
 
     footer {
         mask: unset;
+    }
+
+    article img {
+        float: unset;
+        margin-left: unset;
     }
 
     #content > h1, #content > h2, #content > ul {
