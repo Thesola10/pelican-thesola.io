@@ -393,6 +393,23 @@ footer p { margin: 0; }
 
 .clear { clear: both; }
 
+@media screen and (max-width: 600px) {
+    nav a {
+        padding: 8.5em 10px 10px 10px;
+    }
+    header .header_box {
+        padding-top: 8.5em;
+    }
+
+    header h1 img.light {
+        display: none !important;
+    }
+    header h1 img.dark {
+        display: inherit !important;
+        margin-top: -105px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     #wrapper {
         margin-left: 2.6em;
