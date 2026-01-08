@@ -71,7 +71,13 @@
         <div class="header_box">
             <h1><a href="{{ SITEURL }}/">
             {% if SITELOGO %}
-                <img src="{{SITELOGO}}" alt="{{SITENAME}}"></img>
+                <img src="{{SITELOGO}}" alt="{{SITENAME}}"
+                {% if SITELOGO_DARK %}
+                    class="light"></img>
+                <img src="{{SITELOGO_DARK}}" alt="{{SITENAME}}" class="dark">
+                {% endif %}
+                </img>
+
             {% else %}
                 {{ SITENAME }}
             {% endif %}

@@ -45,6 +45,18 @@
 
 /********** Common elements **********/
 
+.dark {
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    .dark {
+        display: inherit;
+    }
+    .light {
+        display: none;
+    }
+}
+
 icons {
     font-family: var(--font-icons);
     display: inline;
