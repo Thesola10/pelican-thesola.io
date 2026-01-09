@@ -201,7 +201,7 @@ thead {
 }
 
 .page {
-    margin: 0 90px;
+    margin: 0 90px 0 180px;
 }
 
 .highlight {
@@ -409,46 +409,6 @@ footer p { margin: 0; }
 
 .mobile { display: none; }
 
-@media screen and (max-width: 430px) {
-    header h1 img {
-        mask: linear-gradient(white 50px, transparent);
-    }
-    nav ul {
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    article.preview img {
-        margin-right: -10em;
-        margin-top: 0;
-        mask: linear-gradient(90deg, white 0, rgba(0,0,0,.4) 3em, transparent);
-        z-index: -10;
-        position: relative;
-    }
-
-    #viewport {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    nav a {
-        padding: 8.5em 10px 10px 10px;
-    }
-    header .header_box {
-        padding-top: 8.5em;
-    }
-
-    header h1 img.light {
-        display: none !important;
-    }
-    header h1 img.dark {
-        display: inherit !important;
-        margin-top: -105px;
-    }
-}
 
 @media screen and (max-width: 1024px) {
     #wrapper {
@@ -472,6 +432,9 @@ footer p { margin: 0; }
     .post pre,
     .post code {
         white-space: pre-wrap;
+    }
+    .page {
+        margin: 0 90px;
     }
     .archives {
         margin: 0 0 1.5em 0 !important;
@@ -503,6 +466,56 @@ footer p { margin: 0; }
 
     #content > h1, #content > h2, #content > ul {
         margin-left: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        padding: 8.5em 10px 10px 10px;
+    }
+    header .header_box {
+        padding-top: 8.5em;
+    }
+
+    header h1 img.light {
+        display: none !important;
+    }
+    header h1 img.dark {
+        display: inherit !important;
+        margin-top: -105px;
+    }
+
+    .page {
+        margin: 0 40px !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    article.preview img {
+        margin-right: -10em;
+        margin-top: 0;
+        mask: linear-gradient(90deg, white 0, rgba(0,0,0,.4) 3em, transparent);
+        z-index: -10;
+        position: relative;
+    }
+
+    #viewport {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header h1 img {
+        mask: linear-gradient(white 50px, transparent);
+    }
+    nav ul {
+        position: absolute;
+    }
+
+    .page {
+        margin: 0 10px !important;
     }
 }
 @media print {
