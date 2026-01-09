@@ -128,9 +128,13 @@ img + em {
 }
 
 blockquote {
-    margin: 1.5em 1.5em 1.5em .75em;
+    margin: .75em;
     padding-left: .75em;
-    border-left: 1px solid #EEE;
+    padding-right: 1em;
+    border-left: 2px solid var(--text);
+    background: rgba(33,72,129, .2);
+    display: inline-block;
+    font-style: italic;
 }
 
 table {
