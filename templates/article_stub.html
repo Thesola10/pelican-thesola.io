@@ -4,7 +4,9 @@
 
             {% if articles_page %}
             <article class="post preview">
-            <img src="{{ article.image }}"></img>
+                {% if article.image %}
+                <img src="{{ article.image }}" class="desktop"></img>
+                {% endif %}
             {% else %}
             <article class="post">
             {% endif %}
@@ -13,6 +15,10 @@
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permanent Link to &quot;{{ article.title|striptags }}&quot;">{{ article.title }}</a>
                 </h2>
                 {% endif %}
+
+            {% if articles_page and article.image %}
+            <img src="{{ article.image }}" class="mobile"></img>
+            {% endif %}
 
             {% if not articles_page %}
             {% include "translations.html" %}

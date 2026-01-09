@@ -277,6 +277,7 @@ nav ul {
     list-style: none;
     margin: 0 0 0 3em;
     padding: 0;
+    width: max-content;
 }
 nav li {
     float: left;
@@ -393,6 +394,34 @@ footer p { margin: 0; }
 
 .clear { clear: both; }
 
+.desktop { display: inherit; }
+
+.mobile { display: none; }
+
+@media screen and (max-width: 430px) {
+    header h1 img {
+        mask: linear-gradient(white 50px, transparent);
+    }
+    nav ul {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article.preview img {
+        margin-right: -10em;
+        margin-top: 0;
+        mask: linear-gradient(90deg, white 0, rgba(0,0,0,.4) 3em, transparent);
+        z-index: -10;
+        position: relative;
+    }
+
+    #viewport {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 600px) {
     nav a {
         padding: 8.5em 10px 10px 10px;
@@ -446,6 +475,14 @@ footer p { margin: 0; }
 
     footer {
         mask: unset;
+    }
+
+    .desktop { display: none; }
+    .mobile { display: inherit; }
+
+    article.preview img {
+        float: left;
+        margin-left: 0;
     }
 
     article img {
