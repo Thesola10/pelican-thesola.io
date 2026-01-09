@@ -160,7 +160,7 @@ thead {
     color: inherit;
 }
 .info a.tags {
-    background: #CCC;
+    background: rgba(100,100,100, 0.3);
     color: #FFF;
     display: inline-block;
     padding: 0 .3em;
@@ -189,6 +189,11 @@ thead {
 }
 .post p {
     text-align: justify;
+}
+.post p > a {
+    text-decoration-style: dotted;
+    text-decoration-inset: 2px;
+    text-decoration-line: underline;
 }
 
 .page {
@@ -366,13 +371,15 @@ code {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     box-sizing: border-box;
-    color: #C7254E;
-    font-size: 12.6px;
+    color: var(--hi-accent);
+    font-family: var(--font-mono);
+    font-size: 13px;
     line-height: 18px;
-    padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 4px;
-    padding-top: 2px;
+    padding: 2px 4px;
+}
+
+pre > code {
+    padding: 2px 0;
 }
 
 footer {
@@ -383,7 +390,7 @@ footer {
     padding-bottom: 3em;
     width: inherit;
 
-    background-color: rgba(0,0,0, 0.1);
+    background-color: rgba(100,100,100, 0.1);
     mask: linear-gradient(90deg, transparent 0px
                                , transparent 140px
                                , white 140px);
