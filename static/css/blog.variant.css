@@ -47,6 +47,9 @@ em {
 strong {
     font-weight: bold;
 }
+s {
+    opacity: .6;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
