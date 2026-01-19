@@ -483,7 +483,7 @@ footer p { margin: 0; }
     }
 
     article img {
-        float: unset !important;
+        float: unset;
         margin-left: unset;
     }
 
