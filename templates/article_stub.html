@@ -10,11 +10,15 @@
             {% else %}
             <article class="post">
             {% endif %}
-                {% if article.title %}
-                <h2 class="title">
-                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permanent Link to &quot;{{ article.title|striptags }}&quot;">{{ article.title }}</a>
-                </h2>
+            {% if article.title %}
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permanent Link to &quot;{{ article.title|striptags }}&quot;">
+                {% if articles_page %}
+                    <h2 class="title">{{ article.title }}</h2>
+                {% else %}
+                    <h1 class="title">{{ article.title }}</h1>
                 {% endif %}
+            </a>
+            {% endif %}
 
             {% if articles_page and article.image %}
             <img src="{{ article.image }}" class="mobile"></img>
