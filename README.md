@@ -1,12 +1,28 @@
 # My Pelican theme
 A theme derived from Blue Penguin, liberally adapted into my graphical style.
 
+## Features
+Some features were added to articles to enhance reading experience.
+
+The `Summary` metadata key will be shown instead of the shortened article body in article list pages.
+
+The `Image` metadata key will show a thumbnail image next to the article in article list pages.
+
+A left-aligned pull-quote can be created using the `<pullquote>` HTML tag, and made right-aligned by using `<pullquote right>`.
+
 ## Settings
 ```python
 # all the following settings are *optional*
 
 # HTML metadata
 SITEDESCRIPTION = ''
+
+# Use logo instead of site name
+SITELOGO = '/images/logo.png'
+SITELOGO_DARK = '/images/logo-dark.png'
+
+# If set, article list will be replaced with the hidden page matching this slug
+INDEX_SLUG = 'index'
 
 # all defaults to True.
 DISPLAY_HEADER = True
