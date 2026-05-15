@@ -12,6 +12,9 @@ A left-aligned pull-quote can be created using the `<pullquote>` HTML tag, and m
 
 ## Settings
 ```python
+# Required! Currently valid archetypes: 'blog' or 'front'
+ARCHETYPE = 'blog'
+
 # all the following settings are *optional*
 
 # HTML metadata
