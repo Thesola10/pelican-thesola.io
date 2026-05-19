@@ -64,5 +64,17 @@ PAGINATION_PATTERNS = (
 
 ```
 
+## Notice
+
+The background image in this repository is licensed to Karim Vergnes
+under the Adobe Stock Standard license. Usage of the image by a third
+party is not permitted and constitutes a breach of the license terms.
+
+For more information, please refer to [the Adobe Stock Standard license](https://stock.adobe.com/license-terms)
+
+
+See [LICENSE](LICENSE) for terms covering the source code and rendered design.
+
 ## Contributors
 See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
