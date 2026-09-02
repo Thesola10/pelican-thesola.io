@@ -16,7 +16,13 @@
     <h2 style="text-align: center; letter-spacing: 10px;">
         <icons>
         {% for s in SOCIAL %}
-            <a href="{{s[1]}}">{{s[0]|nf}}</a>
+            <a href="{{s[1]}}">
+                {% if icon is not none %}
+                {{s[0]|icon}}
+                {% else %}
+                {{s[0]}}
+                {% endif %}
+            </a>
         {% endfor %}
         </icons>
     </h2>
