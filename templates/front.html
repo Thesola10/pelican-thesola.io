@@ -1,0 +1,41 @@
+{# This template is included by archetypes/front.html #}
+
+<div id="viewport" class="front">
+    <div id="lpartition">
+        <div id="logo">
+            <img src="{{SITELOGO}}" alt="{{SITENAME}}"></img>
+            <p class="tagline" id="tagline">allan pls add javascript</p>
+        </div>
+        <nav id="nav1">
+            {% for c in categories %}
+            <a href="{{ p.url }}">{{ p.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+    <br/>
+    <h2 style="text-align: center; letter-spacing: 10px;">
+        <icons>
+        {% for s in SOCIAL %}
+            <a href="{{s[1]}}">{{s[0]|nf}}</a>
+        {% endfor %}
+        </icons>
+    </h2>
+</div>
+
+<script>
+    const taglines = {{ TAGLINES | tojson }};
+    var tl = document.getElementById("tagline");
+    var ri = Math.floor(Math.random() * taglines.length);
+    tl.textContent = taglines[ri][0];
+    if (taglines[ri][1] !== null) {
+        var tl2 = document.createElement("p")
+
+        console.log("This is an interactive tagline, lucky!");
+        tl2.classList.add("tagline")
+        tl2.classList.add("reveal2")
+        tl2.textContent = taglines[ri][1];
+
+        tl.classList.add("reveal1")
+        tl.insertAdjacentElement('afterend', tl2);
+    }
+</script>

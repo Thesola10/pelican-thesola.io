@@ -3,5 +3,9 @@
 {% elif ARCHETYPE == "front" %}
     {% extends "archetypes/front.html" %}
 {% else %}
+    {# This causes the archetype name to get evaluated into an error
+     # of the form "ARCHETYPE is not defined" if the ARCHETYPE variable
+     # was not set.
+     #}
     {{ ARCHETYPE() }}
 {% endif %}
