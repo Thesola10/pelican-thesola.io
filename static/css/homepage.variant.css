@@ -4,16 +4,47 @@
  */
 
 body {
-    background-color: var(--bluepants);
-    color: var(--steel);
+    background-image: url(../images/night.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
-    overflow: hidden;
 }
 
+* {
+    vertical-align: baseline;
+}
+
+
+
 #viewport {
-    position: absolute;
-    text-align: center;
-    overflow-y: scroll;
+    padding: 1em;
+    max-width: 80em;
+    width: unset;
+
+    background: linear-gradient(90deg, var(--backdrop-semi) 0px
+                                     , var(--backdrop-semi) 140px
+                                     , var(--backdrop) 140px);
+
+    backdrop-filter: blur(5px);
+    margin-left: calc(max(1em, 50% - 41em));
+    margin-right: 1em;
+}
+
+#viewport.front {
+    height: fit-content;
+    margin-top: 20vh;
+    max-width: 50em;
+    margin-left: calc(max(1em, 50% - 25em));
+}
+
+#nav1 {
+    font-size: 120%;
+}
+
+article.preview img {
+    width: 200px;
+    float: right;
+    margin-left: 1em;
 }
 
 /* EMBEDDED NAVBAR */
@@ -21,21 +52,6 @@ body {
     width: 80%;
     max-width: 1200px;
     height: 120px;
-}
-
-/* PAGE CONTENT */
-#termport { margin-top: 40px; }
-
-#termport, article {
-    width: 80%;
-    display: inline-block;
-    text-align: left;
-
-    max-width: 1200px;
-    margin-bottom: 3rem;
-}
-#termport > p, article > p {
-    margin: 0;
 }
 
 /* WELCOME TAGLINE */
@@ -78,7 +94,6 @@ nav a {
     display: inline-flex;
     align-items: center;
     height: 260px;
-    margin-top: 20%;
     flex-direction: row;
 }
 article.project a, h3 a {

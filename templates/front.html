@@ -7,8 +7,8 @@
             <p class="tagline" id="tagline">allan pls add javascript</p>
         </div>
         <nav id="nav1">
-            {% for c in categories %}
-            <a href="{{ p.url }}">{{ p.title }}</a>
+            {% for m in MENUITEMS %}
+            <a href="{{ m[0] }}">{{ m[1] }}</a>
             {% endfor %}
         </nav>
     </div>
