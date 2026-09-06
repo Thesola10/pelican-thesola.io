@@ -18,7 +18,7 @@ body {
 
 #viewport {
     padding: 1em;
-    max-width: 80em;
+    max-width: 50em;
     width: unset;
 
     background: linear-gradient(90deg, var(--backdrop-semi) 0px
@@ -26,15 +26,13 @@ body {
                                      , var(--backdrop) 140px);
 
     backdrop-filter: blur(5px);
-    margin-left: calc(max(1em, 50% - 41em));
+    margin-top: calc(20vh - 45px);
+    margin-left: calc(max(1em, 50% - 25em));
     margin-right: 1em;
 }
 
 #viewport.front {
-    height: fit-content;
     margin-top: 20vh;
-    max-width: 50em;
-    margin-left: calc(max(1em, 50% - 25em));
 }
 
 #nav1 {
@@ -100,6 +98,70 @@ article.project a, h3 a {
     color: var(--hi-accent);
 }
 
+header nav ul {
+    float: right;
+    list-style: none;
+    margin: 0 0 0 3em;
+    padding: 0;
+    width: max-content;
+}
+header nav li {
+    float: left;
+}
+header nav a {
+    display: block;
+    padding: 4.5em 10px 10px 10px;
+    color: var(--steel);
+}
+header nav a:hover {
+    background-color: var(--bluepants);
+    color: var(--ochre);
+}
+header nav li.selected a {
+    background-color: var(--bluepants2);
+    color: white;
+}
+
+header, #wrapper {
+    padding: 0 10px;
+    max-width: 910px;
+    margin: auto;
+}
+
+header .header_box {
+    padding-top: 4.5em;
+    height: 45px;
+}
+header h1 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 0;
+}
+header h2 {
+    font-size: 1em;
+    margin: .3em 0;
+    color: #DDD;
+}
+
+header h1 img {
+    max-height: 120px;
+    display: inline;
+    margin-top: -42px;
+    z-index: 100;
+    position: absolute;
+    border: none;
+    box-shadow: unset;
+}
+
+footer {
+    color: var(--steel);
+    text-align: center;
+    margin-top: 4em;
+}
+
+footer a {
+    color: var(--ochre);
+}
 
 /********** RESPONSIVE **********/
 @media screen and (max-height: 720px) {

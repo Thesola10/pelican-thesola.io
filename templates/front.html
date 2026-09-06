@@ -7,20 +7,20 @@
             <p class="tagline" id="tagline">allan pls add javascript</p>
         </div>
         <nav id="nav1">
-            {% for m in MENUITEMS %}
-            <a href="{{ m[0] }}">{{ m[1] }}</a>
+            {% for title, link in MENUITEMS %}
+            <a href="{{ link }}">{{ title }}</a>
             {% endfor %}
         </nav>
     </div>
     <br/>
     <h2 style="text-align: center; letter-spacing: 10px;">
         <icons>
-        {% for s in SOCIAL %}
-            <a href="{{s[1]}}">
+        {% for icnname, link in SOCIAL %}
+            <a href="{{link}}">
                 {% if icon is not none %}
-                {{s[0]|icon}}
+                {{icnname|icon}}
                 {% else %}
-                {{s[0]}}
+                {{icnname}}
                 {% endif %}
             </a>
         {% endfor %}
